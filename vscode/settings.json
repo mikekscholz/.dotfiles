@@ -1,0 +1,211 @@
+{
+    "vscode_vibrancy.imports": [
+        "$theme-style$"
+    ],
+    "workbench.iconTheme": "helium-icon-theme",
+    "window.newWindowDimensions": "maximized",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "simpleIcons.simple.folder.color": "#0068b3",
+    "simpleIcons.simple.file.color": "#0068b3",
+    "editor.fontFamily": "SauceCodePro NF",
+    "editor.scrollBeyondLastLine": false,
+    "editor.smoothScrolling": true,
+    "editor.tabCompletion": "on",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "phase",
+    "editor.tokenColorCustomizations": {
+        "[POP!]": {
+            "strings": "#fff86b",
+            "comments": "#aaaaaa",
+            "textMateRules": [
+                {
+                    "scope": [
+                        "punctuation.definition.parameters.begin.js",
+                        "punctuation.definition.parameters.end.js",
+                        "meta.brace.round.js",
+                        "punctuation.definition.block.js",
+                        "punctuation.section.property-list.begin.bracket.curly.css",
+                        "punctuation.section.property-list.end.bracket.curly.css",
+                        "punctuation.section.function.begin.bracket.round.css",
+                        "punctuation.section.function.end.bracket.round.css",
+                        "punctuation.section.keyframes.begin.bracket.curly.css",
+                        "punctuation.section.keyframes.end.bracket.curly.css",
+                        "punctuation.definition.entity.begin.bracket.square.css",
+                        "punctuation.definition.entity.end.bracket.square.css",
+                        "keyword.operator.logical.js"
+                    ],
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": [
+                        // "meta.arrow.js"
+                        "storage.type.function.arrow.js"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic bold"
+                    }
+                },
+                {
+                    "scope": "activeGuide",
+                    "settings": {
+                        "foreground": "#000000",
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        }
+    },
+    "frosted-glass-theme.backgroundColor": "#00000096",
+    "platformio-ide.disablePIOHomeStartup": true,
+    "scm.inputFontFamily": "editor",
+    "workbench.colorCustomizations": {
+        "editor.background": "#0c0c0c",
+        "editor.lineHighlightBackground": "#00000011",
+        "editorBracketHighlight.foreground1": "#ff008c",
+        "editorBracketHighlight.foreground2": "#00CCFF",
+        "editorBracketHighlight.foreground3": "#8AF20C",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
+        // "editor.selectionForeground": "#ff0000",
+        "editor.selectionBackground": "#4b4b4b77",
+        "editor.wordHighlightStrongBackground": "#4b4b4b77",
+        "editor.selectionHighlightBackground": "#4b4b4b77",
+        "selection.background": "#4b4b4b77",
+        "editor.wordHighlightBackground": "#4b4b4b77",
+        "editor.findMatchBackground": "#00000000",
+        "editor.linkedEditingBackground": "#ff000000",
+        "terminal.ansiBlack": "#1b1d1e",
+        "terminal.ansiBlue": "#33D9EF",
+        "terminal.ansiBrightBlack": "#505354",
+        "terminal.ansiBrightBlue": "#33D9EF",
+        "terminal.ansiBrightCyan": "#a3babf",
+        "terminal.ansiBrightGreen": "#BEED5F",
+        "terminal.ansiBrightPurple": "#9E6FFE",
+        "terminal.ansiBrightRed": "#FF669D",
+        "terminal.ansiBrightWhite": "#F8F8F2",
+        "terminal.ansiBrightYellow": "#E6DB74",
+        "terminalCursor.foreground": "#33d9ef",
+        "terminal.ansiCyan": "#5e7175",
+        "terminal.ansiGreen": "#A6E22E",
+        "terminal.ansiPurple": "#9E6FFE",
+        "terminal.ansiRed": "#F92672",
+        "terminal.ansiWhite": "#ccccc6",
+        "terminal.ansiYellow": "#FD971F",
+        "terminal.foreground": "#a0a0a0",
+        "terminalCursor.background": "#33d9ef",
+        "terminal.background": "#33d9ef",
+        "editor.lineHighlightBorder": "#00000022"
+    },
+    "window.dialogStyle": "custom",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "normal",
+    "frosted-glass-theme.backdropFilter": "blur(8px)",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "openInDefaultBrowser.run.openWithLocalHttpServer": false,
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.minimap.scale": 2,
+    "editor.minimap.showSlider": "always",
+    "helium-icon-theme.folders.color": "#0068b3",
+    "extensions.autoUpdate": false,
+    "editor.quickSuggestions": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "workbench.list.smoothScrolling": true,
+    "workbench.startupEditor": "none",
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabSize": 2,
+    "vscode_vibrancy.opacity": 0.7,
+    "vscode_vibrancy.type": "acrylic",
+    "vscode_vibrancy.theme": "Default Dark",
+    "workbench.colorTheme": "POP!",
+    "telemetry.telemetryLevel": "off",
+    "update.mode": "manual",
+    "workbench.preferredDarkColorTheme": "POP!",
+    "workbench.statusBar.visible": true,
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.colors": [
+        "#f82b6f44",
+        "#00CCFF44",
+        "#8AF20C44"
+    ],
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "indentRainbow.includedLanguages": [
+        "html"
+    ],
+    "editor.wordWrap": "off",
+    "diffEditor.wordWrap": "off",
+    "editor.guides.indentation": true,
+    "editor.guides.bracketPairs": true,
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.lineHeight": 0,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.shellIntegration.decorationsEnabled": false,
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorWidth": 4,
+    "terminal.integrated.letterSpacing": 0,
+    "terminal.integrated.fontFamily": "SauceCodePro NF",
+    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.minimumContrastRatio": 0,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "path": "powershell.exe",
+            "args": [
+                "-NoLogo"
+            ]
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": []
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "editor.columnSelection": false,
+    "editor.guides.bracketPairsHorizontal": "active",
+    "highlight-matching-tag.styles": {
+        "opening": {
+          "name": {
+            "highlight": "#ee296b",
+            "custom": { "color": "#000000" }
+          }
+        }
+    }, 
+    "editor.occurrencesHighlight": false,
+    "html.format.wrapLineLength": 0,
+    "highlight-matching-tag.highlightSelfClosing": true,
+    "update.enableWindowsBackgroundUpdates": false,
+    "terminal.integrated.gpuAcceleration": "off",
+    "editor.cursorSurroundingLines": 0,
+    "workbench.editor.decorations.badges": true,
+    "terminal.integrated.unicodeVersion": "11",
+    "commentAnchors.tags.displayLineNumber": false,
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "editor.renderWhitespace": "none",
+    "workbench.editor.decorations.colors": false,
+    "scm.diffDecorations": "none"
+}
