@@ -1,211 +1,348 @@
 {
-    "vscode_vibrancy.imports": [
-        "$theme-style$"
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "commentAnchors.tags.displayLineNumber": false,
+  "commentAnchors.tags.list": [
+    {
+      "highlightColor": "#A8C023",
+      "iconColor": "#A8C023",
+      "scope": "file",
+      "tag": "ANCHOR"
+    },
+    {
+      "highlightColor": "#3ea8ff",
+      "iconColor": "blue",
+      "scope": "workspace",
+      "tag": "TODO"
+    },
+    {
+      "highlightColor": "#F44336",
+      "iconColor": "red",
+      "scope": "workspace",
+      "tag": "FIXME"
+    },
+    {
+      "highlightColor": "#BA68C8",
+      "iconColor": "purple",
+      "scope": "file",
+      "tag": "STUB"
+    },
+    {
+      "highlightColor": "#FFB300",
+      "iconColor": "orange",
+      "scope": "file",
+      "tag": "NOTE"
+    },
+    {
+      "highlightColor": "#64DD17",
+      "iconColor": "green",
+      "scope": "workspace",
+      "tag": "REVIEW"
+    },
+    {
+      "behavior": "region",
+      "highlightColor": "#896afc",
+      "iconColor": "blurple",
+      "scope": "workspace",
+      "tag": "SECTION"
+    },
+    {
+      "behavior": "link",
+      "highlightColor": "#2ecc71",
+      "iconColor": "#2ecc71",
+      "scope": "workspace",
+      "tag": "LINK"
+    }
+  ],
+  "css.customData": [
+    "./.vscode/svg.css-data.json"
+  ],
+  "css.format.spaceAroundSelectorSeparator": true,
+  "css.lint.validProperties": [
+    "cx",
+    "cy",
+    "r",
+    "alignment-baseline"
+  ],
+  "diffEditor.renderIndicators": false,
+  "diffEditor.wordWrap": "off",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.columnSelection": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSurroundingLines": 0,
+  "editor.find.autoFindInSelection": "multiline",
+  // "editor.fontFamily": "SauceCodePro NF",
+  // "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  // "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.indentation": true,
+  "editor.language.colorizedBracketPairs": [
+    [
+      "[",
+      "]"
     ],
-    "workbench.iconTheme": "helium-icon-theme",
-    "window.newWindowDimensions": "maximized",
-    "workbench.tree.renderIndentGuides": "always",
-    "workbench.view.alwaysShowHeaderActions": true,
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "simpleIcons.simple.folder.color": "#0068b3",
-    "simpleIcons.simple.file.color": "#0068b3",
-    "editor.fontFamily": "SauceCodePro NF",
-    "editor.scrollBeyondLastLine": false,
-    "editor.smoothScrolling": true,
-    "editor.tabCompletion": "on",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorBlinking": "phase",
-    "editor.tokenColorCustomizations": {
-        "[POP!]": {
-            "strings": "#fff86b",
-            "comments": "#aaaaaa",
-            "textMateRules": [
-                {
-                    "scope": [
-                        "punctuation.definition.parameters.begin.js",
-                        "punctuation.definition.parameters.end.js",
-                        "meta.brace.round.js",
-                        "punctuation.definition.block.js",
-                        "punctuation.section.property-list.begin.bracket.curly.css",
-                        "punctuation.section.property-list.end.bracket.curly.css",
-                        "punctuation.section.function.begin.bracket.round.css",
-                        "punctuation.section.function.end.bracket.round.css",
-                        "punctuation.section.keyframes.begin.bracket.curly.css",
-                        "punctuation.section.keyframes.end.bracket.curly.css",
-                        "punctuation.definition.entity.begin.bracket.square.css",
-                        "punctuation.definition.entity.end.bracket.square.css",
-                        "keyword.operator.logical.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": [
-                        // "meta.arrow.js"
-                        "storage.type.function.arrow.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic bold"
-                    }
-                },
-                {
-                    "scope": "activeGuide",
-                    "settings": {
-                        "foreground": "#000000",
-                        "fontStyle": "bold"
-                    }
-                }
-            ]
-        }
-    },
-    "frosted-glass-theme.backgroundColor": "#00000096",
-    "platformio-ide.disablePIOHomeStartup": true,
-    "scm.inputFontFamily": "editor",
-    "workbench.colorCustomizations": {
-        "editor.background": "#0c0c0c",
-        "editor.lineHighlightBackground": "#00000011",
-        "editorBracketHighlight.foreground1": "#ff008c",
-        "editorBracketHighlight.foreground2": "#00CCFF",
-        "editorBracketHighlight.foreground3": "#8AF20C",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
-        // "editor.selectionForeground": "#ff0000",
-        "editor.selectionBackground": "#4b4b4b77",
-        "editor.wordHighlightStrongBackground": "#4b4b4b77",
-        "editor.selectionHighlightBackground": "#4b4b4b77",
-        "selection.background": "#4b4b4b77",
-        "editor.wordHighlightBackground": "#4b4b4b77",
-        "editor.findMatchBackground": "#00000000",
-        "editor.linkedEditingBackground": "#ff000000",
-        "terminal.ansiBlack": "#1b1d1e",
-        "terminal.ansiBlue": "#33D9EF",
-        "terminal.ansiBrightBlack": "#505354",
-        "terminal.ansiBrightBlue": "#33D9EF",
-        "terminal.ansiBrightCyan": "#a3babf",
-        "terminal.ansiBrightGreen": "#BEED5F",
-        "terminal.ansiBrightPurple": "#9E6FFE",
-        "terminal.ansiBrightRed": "#FF669D",
-        "terminal.ansiBrightWhite": "#F8F8F2",
-        "terminal.ansiBrightYellow": "#E6DB74",
-        "terminalCursor.foreground": "#33d9ef",
-        "terminal.ansiCyan": "#5e7175",
-        "terminal.ansiGreen": "#A6E22E",
-        "terminal.ansiPurple": "#9E6FFE",
-        "terminal.ansiRed": "#F92672",
-        "terminal.ansiWhite": "#ccccc6",
-        "terminal.ansiYellow": "#FD971F",
-        "terminal.foreground": "#a0a0a0",
-        "terminalCursor.background": "#33d9ef",
-        "terminal.background": "#33d9ef",
-        "editor.lineHighlightBorder": "#00000022"
-    },
-    "window.dialogStyle": "custom",
-    "editor.fontSize": 16,
-    "editor.fontWeight": "normal",
-    "frosted-glass-theme.backdropFilter": "blur(8px)",
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "openInDefaultBrowser.run.openWithLocalHttpServer": false,
-    "editor.find.autoFindInSelection": "multiline",
-    "editor.minimap.scale": 2,
-    "editor.minimap.showSlider": "always",
-    "helium-icon-theme.folders.color": "#0068b3",
-    "extensions.autoUpdate": false,
-    "editor.quickSuggestions": true,
-    "editor.acceptSuggestionOnEnter": "off",
-    "workbench.list.smoothScrolling": true,
-    "workbench.startupEditor": "none",
-    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook",
-        "*.md": "vscode.markdown.preview.editor"
-    },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.linkedEditing": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.tabSize": 2,
-    "vscode_vibrancy.opacity": 0.7,
-    "vscode_vibrancy.type": "acrylic",
-    "vscode_vibrancy.theme": "Default Dark",
-    "workbench.colorTheme": "POP!",
-    "telemetry.telemetryLevel": "off",
-    "update.mode": "manual",
-    "workbench.preferredDarkColorTheme": "POP!",
-    "workbench.statusBar.visible": true,
-    "editor.scrollbar.horizontal": "visible",
-    "editor.scrollbar.vertical": "visible",
-    "indentRainbow.indicatorStyle": "light",
-    "indentRainbow.colors": [
-        "#f82b6f44",
-        "#00CCFF44",
-        "#8AF20C44"
+    [
+      "(",
+      ")"
     ],
-    "indentRainbow.lightIndicatorStyleLineWidth": 1,
-    "indentRainbow.includedLanguages": [
-        "html"
-    ],
-    "editor.wordWrap": "off",
-    "diffEditor.wordWrap": "off",
-    "editor.guides.indentation": true,
-    "editor.guides.bracketPairs": true,
-    "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.lineHeight": 0,
-    "terminal.integrated.drawBoldTextInBrightColors": false,
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.enablePersistentSessions": false,
-    "terminal.integrated.shellIntegration.decorationsEnabled": false,
-    "terminal.integrated.fontSize": 17,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorWidth": 4,
-    "terminal.integrated.letterSpacing": 0,
-    "terminal.integrated.fontFamily": "SauceCodePro NF",
-    "terminal.integrated.fontWeight": "600",
-    "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.minimumContrastRatio": 0,
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "path": "powershell.exe",
-            "args": [
-                "-NoLogo"
-            ]
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": []
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        }
-    },
-    "editor.columnSelection": false,
-    "editor.guides.bracketPairsHorizontal": "active",
-    "highlight-matching-tag.styles": {
-        "opening": {
-          "name": {
-            "highlight": "#ee296b",
-            "custom": { "color": "#000000" }
+    [
+      "{",
+      "}"
+    ]
+    // [ "<", "</" ]
+  ],
+  "editor.linkedEditing": true,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.occurrencesHighlight": false,
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "other": "on",
+    "strings": "on"
+  },
+  "editor.renderWhitespace": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.scrollbar.horizontal": "visible",
+  "editor.scrollbar.vertical": "visible",
+  "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+  "editor.smoothScrolling": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[POP!]": {
+      "comments": "#aaaaaa",
+      "strings": "#fff86b",
+      "textMateRules": [
+        {
+          "scope": [
+            "punctuation.definition.parameters.begin.js",
+            "punctuation.definition.parameters.end.js",
+            "meta.brace.round.js",
+            "punctuation.definition.block.js",
+            "punctuation.section.property-list.begin.bracket.curly.css",
+            "punctuation.section.property-list.end.bracket.curly.css",
+            "punctuation.section.function.begin.bracket.round.css",
+            "punctuation.section.function.end.bracket.round.css",
+            "punctuation.section.keyframes.begin.bracket.curly.css",
+            "punctuation.section.keyframes.end.bracket.curly.css",
+            "punctuation.definition.entity.begin.bracket.square.css",
+            "punctuation.definition.entity.end.bracket.square.css",
+            "keyword.operator.logical.js"
+          ],
+          "settings": {
+            "fontStyle": "bold"
           }
-        }
-    }, 
-    "editor.occurrencesHighlight": false,
-    "html.format.wrapLineLength": 0,
-    "highlight-matching-tag.highlightSelfClosing": true,
-    "update.enableWindowsBackgroundUpdates": false,
-    "terminal.integrated.gpuAcceleration": "off",
-    "editor.cursorSurroundingLines": 0,
-    "workbench.editor.decorations.badges": true,
-    "terminal.integrated.unicodeVersion": "11",
-    "commentAnchors.tags.displayLineNumber": false,
-    "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
-    "css.format.spaceAroundSelectorSeparator": true,
-    "editor.renderWhitespace": "none",
-    "workbench.editor.decorations.colors": false,
-    "scm.diffDecorations": "none"
+        },
+        {
+          "scope": [
+            // "meta.arrow.js"
+            "storage.type.function.arrow.js"
+          ],
+          "settings": {
+            "fontStyle": "italic bold"
+          }
+        },
+        {
+          "scope": [
+            "meta.element.metadata.svg.style.html"
+          ],
+          "settings": {
+            "foreground": "#FFFFFF"
+          }
+        },
+      ]
+    }
+  },
+  "editor.wordWrap": "off",
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "extensions.autoUpdate": false,
+  "files.restoreUndoStack": true,
+  "frosted-glass-theme.backdropFilter": "blur(8px)",
+  "frosted-glass-theme.backgroundColor": "#00000096",
+  "helium-icon-theme.folders.color": "#0068b3",
+  "helium-icon-theme.saturation": 1,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "custom": {
+          "color": "#000000"
+        },
+        "highlight": "#ee296b"
+      }
+    }
+  },
+  "html.format.wrapLineLength": 0,
+  "html.hover.references": false,
+  "indentRainbow.colors": [
+    "#ff008c33",
+    "#00CCFF33",
+    "#8AF20C33",
+    "#ff008c33",
+    "#00CCFF33",
+    "#8AF20C33"
+  ],
+  "indentRainbow.indicatorStyle": "light",
+  "openInDefaultBrowser.run.openWithLocalHttpServer": false,
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "platformio-ide.disablePIOHomeStartup": true,
+  "scm.diffDecorations": "none",
+  "scm.inputFontFamily": "editor",
+  "simpleIcons.simple.file.color": "#0068b3",
+  "simpleIcons.simple.folder.color": "#0068b3",
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorWidth": 4,
+  "terminal.integrated.customGlyphs": false,
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.enableFileLinks": false,
+  "terminal.integrated.enablePersistentSessions": false,
+  // "terminal.integrated.fontFamily": "SauceCodePro NF",
+  // "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "500",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.letterSpacing": 0,
+  "terminal.integrated.lineHeight": 0,
+  "terminal.integrated.minimumContrastRatio": 0,
+  "terminal.integrated.profiles.windows": {
+    "Command Prompt": {
+      "args": [],
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ]
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "PowerShell": {
+      "args": [
+        "-NoLogo"
+      ],
+      "path": "powershell.exe"
+    }
+  },
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.shellIntegration.decorationsEnabled": false,
+  "terminal.integrated.unicodeVersion": "11",
+  "todo.embedded.exclude": [
+    "*",
+    "**/.*",
+    "**/.*/**",
+    "**/_output/**",
+    "**/bower_components/**",
+    "**/build/**",
+    "**/dist/**",
+    "**/venv/**",
+    "**/node_modules/**",
+    "**/out/**",
+    "**/output/**",
+    "**/release/**",
+    "**/releases/**",
+    "**/static/**",
+    "**/target/**",
+    "**/third_party/**",
+    "**/vendor/**",
+    "**/CHANGELOG",
+    "**/CHANGELOG.*",
+    "**/*.min.*",
+    "**/*.map",
+    "**/*.{3ds,3g2,3gp,7z,a,aac,adp,ai,aif,aiff,alz,ape,apk,ar,arj,asf,au,avi,bak,baml,bh,bin,bk,bmp,btif,bz2,bzip2,cab,caf,cgm,class,cmx,cpio,cr2,csv,cur,dat,dcm,deb,dex,djvu,dll,dmg,dng,doc,docm,docx,dot,dotm,dra,DS_Store,dsk,dts,dtshd,dvb,dwg,dxf,ecelp4800,ecelp7470,ecelp9600,egg,eol,eot,epub,exe,f4v,fbs,fh,fla,flac,fli,flv,fpx,fst,fvt,g3,gif,graffle,gz,gzip,h261,h263,h264,icns,ico,ief,img,ipa,iso,jar,jpeg,jpg,jpgv,jpm,jxr,key,ktx,lha,lib,lvp,lz,lzh,lzma,lzo,m3u,m4a,m4v,mar,mdi,mht,mid,midi,mj2,mka,mkv,mmr,mng,mobi,mov,movie,mp3,mp4,mp4a,mpeg,mpg,mpga,mxu,nef,npx,numbers,o,oga,ogg,ogv,otf,pages,pbm,pcx,pdb,pdf,pea,pgm,pic,png,pnm,pot,potm,potx,ppa,ppam,ppm,pps,ppsm,ppsx,ppt,pptm,pptx,psd,pya,pyc,pyo,pyv,qt,rar,ras,raw,resources,rgb,rip,rlc,rmf,rmvb,rtf,rz,s3m,s7z,scpt,sgi,shar,sil,sketch,slk,smv,so,sub,swf,tar,tbz,tbz2,tga,tgz,thmx,tif,tiff,tlz,ttc,ttf,txz,udf,uvh,uvi,uvm,uvp,uvs,uvu,viv,vob,war,wav,wax,wbmp,wdp,weba,webm,webp,whl,wim,wm,wma,wmv,wmx,woff,woff2,wvx,xbm,xif,xla,xlam,xls,xlsb,xlsm,xlsx,xlt,xltm,xltx,xm,xmind,xpi,xpm,xwd,xz,z,zip,zipx}"
+  ],
+  "todo.file.name": "TODO",
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "manual",
+  "vscode_vibrancy.imports": [
+    "$theme-style$"
+  ],
+  "vscode_vibrancy.opacity": 0.7,
+  "vscode_vibrancy.theme": "Default Dark",
+  "vscode_vibrancy.type": "acrylic",
+  "window.dialogStyle": "custom",
+  "window.newWindowDimensions": "maximized",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#1b1b1b",
+    "breadcrumb.activeSelectionForeground": "#fff",
+    "breadcrumb.background": "#004a80",
+    "breadcrumb.foreground": "#fff",
+    "breadcrumbPicker.background": "#222c",
+    "editor.background": "#1b1b1b",
+    "editor.findMatchBackground": "#ccca",
+    "editor.findMatchHighlightBackground": "#ccca",
+    "editor.lineHighlightBackground": "#0000005b",
+    "editor.lineHighlightBorder": "#00000022",
+    "editor.linkedEditingBackground": "#ff000000",
+    "editor.selectionBackground": "#ccc4",
+    "editor.selectionForeground": "#222222",
+    "editor.selectionHighlightBackground": "#4b4b4b77",
+    "editor.wordHighlightBackground": "#4b4b4b77",
+    "editor.wordHighlightStrongBackground": "#4b4b4b77",
+    "editorBracketHighlight.foreground1": "#ff3388",
+    "editorBracketHighlight.foreground2": "#00CCFF",
+    "editorBracketHighlight.foreground3": "#8AF20C",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
+    "editorBracketMatch.border": "#8887",
+    "editorIndentGuide.activeBackground": "#fff0",
+    "input.foreground": "#fff",
+    "selection.background": "#ccccccaa",
+    "sideBar.background": "#2a2a2a",
+    "statusBar.background": "#004a80",
+    "tab.activeBackground": "#004a80",
+    "tab.hoverBackground": "#444",
+    "tab.inactiveBackground": "#333",
+    "tab.inactiveForeground": "#eee",
+    "terminal.ansiBlack": "#020202",
+    "terminal.ansiBlue": "#33D9EF",
+    "terminal.ansiBrightBlack": "#505354",
+    "terminal.ansiBrightBlue": "#33D9EF",
+    "terminal.ansiBrightCyan": "#a3babf",
+    "terminal.ansiBrightGreen": "#BEED5F",
+    "terminal.ansiBrightPurple": "#9E6FFE",
+    "terminal.ansiBrightRed": "#FF669D",
+    "terminal.ansiBrightWhite": "#F8F8F2",
+    "terminal.ansiBrightYellow": "#E6DB74",
+    "terminal.ansiCyan": "#5e7175",
+    "terminal.ansiGreen": "#A6E22E",
+    "terminal.ansiPurple": "#9E6FFE",
+    "terminal.ansiRed": "#F92672",
+    "terminal.ansiWhite": "#ccccc6",
+    "terminal.ansiYellow": "#FD971F",
+    "terminal.foreground": "#a0a0a0",
+    "terminalCursor.background": "#33d9ef",
+    "terminalCursor.foreground": "#33d9ef",
+    "titleBar.activeBackground": "#1b1b1b"
+  },
+  "workbench.colorTheme": "POP!",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredDarkColorTheme": "POP!",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.view.alwaysShowHeaderActions": true
 }
