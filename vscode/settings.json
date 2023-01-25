@@ -1,10 +1,30 @@
 {
+  "[css]": {
+    "editor.suggest.insertMode": "insert"
+  },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.suggest.insertMode": "insert",
+    "editor.bracketPairColorization.enabled": false
   },
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
+  "[json]": {
+    "editor.suggest.insertMode": "insert"
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.invisibleCharacters": true
+  },
+  "[plaintext]": {
+    "editor.unicodeHighlight.invisibleCharacters": true
+  },
+  "[scss]": {
+    "editor.suggest.insertMode": "insert"
+  },
+  "audioCues.taskEnded": "on",
+  "audioCues.terminalQuickFix": "on",
+  "background-terminal-notifier.notificationSounds": true,
   "commentAnchors.tags.displayLineNumber": false,
   "commentAnchors.tags.list": [
     {
@@ -58,35 +78,42 @@
       "tag": "LINK"
     }
   ],
-  "css.customData": [
-    "./.vscode/svg.css-data.json"
+  "css.enabledLanguages": [
+    "css",
+    "html",
+    "javascript",
+    "scss"
   ],
   "css.format.spaceAroundSelectorSeparator": true,
+  "css.lint.emptyRules": "ignore",
+  "css.lint.ieHack": "warning",
   "css.lint.validProperties": [
     "cx",
     "cy",
     "r",
-    "alignment-baseline"
+    "alignment-baseline",
+    "dominant-baseline"
   ],
   "diffEditor.renderIndicators": false,
   "diffEditor.wordWrap": "off",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.enabled": true,
-  "editor.columnSelection": false,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.cursorSurroundingLines": 0,
+  "editor.cursorSurroundingLines": 2,
+  "editor.cursorWidth": 2,
   "editor.find.autoFindInSelection": "multiline",
   // "editor.fontFamily": "SauceCodePro NF",
   // "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   // "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
   "editor.fontWeight": "400",
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": "active",
   "editor.guides.indentation": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.hover.enabled": true,
   "editor.language.colorizedBracketPairs": [
     [
       "[",
@@ -99,38 +126,46 @@
     [
       "{",
       "}"
-    ]
-    // [ "<", "</" ]
+    ],
+    [ "<", "/>" ],
+    [ "<", "</" ]
   ],
   "editor.linkedEditing": true,
-  "editor.minimap.scale": 2,
   "editor.minimap.showSlider": "always",
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
   "editor.quickSuggestions": {
-    "comments": "on",
     "other": "on",
+    "comments": "on",
     "strings": "on"
   },
-  "editor.renderWhitespace": "all",
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "boundary",
+  "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
   "editor.scrollbar.horizontal": "visible",
   "editor.scrollbar.vertical": "visible",
+  "editor.selectionHighlight": false,
   "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
   "editor.smoothScrolling": true,
+  "editor.stickyTabStops": true,
+  "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
-    "[POP!]": {
-      "comments": "#aaaaaa",
-      "strings": "#fff86b",
+    "[POP! Theme]": {
+      "comments": "#797979",
+      "strings": "#fff460",
       "textMateRules": [
         {
           "scope": [
             "punctuation.definition.parameters.begin.js",
             "punctuation.definition.parameters.end.js",
             "meta.brace.round.js",
+            "meta.brace.square.js",
+            "punctuation.definition.template-expression.begin.ts",
+            "punctuation.definition.template-expression.end.ts",
             "punctuation.definition.block.js",
+            "punctuation.definition.binding-pattern.object.js",
             "punctuation.section.property-list.begin.bracket.curly.css",
             "punctuation.section.property-list.end.bracket.curly.css",
             "punctuation.section.function.begin.bracket.round.css",
@@ -139,7 +174,21 @@
             "punctuation.section.keyframes.end.bracket.curly.css",
             "punctuation.definition.entity.begin.bracket.square.css",
             "punctuation.definition.entity.end.bracket.square.css",
-            "keyword.operator.logical.js"
+            "keyword.operator.logical.js",
+            "keyword.operator.arithmetic.js",
+            "keyword.operator.relational.js",
+            "keyword.operator.assignment.js",
+            "keyword.operator.comparison.js",
+            "keyword.operator.increment.js",
+            "keyword.operator.decrement.js",
+            "punctuation.section.function.scss",
+            "punctuation.section.keyframes.begin.scss",
+            "punctuation.section.keyframes.end.scss",
+            // "punctuation.section.function.css",
+            "punctuation.section.property-list.begin.bracket.curly.scss",
+            "punctuation.section.property-list.end.bracket.curly.scss",
+            "entity.name.tag.reference.scss",
+            "keyword.operator.css"
           ],
           "settings": {
             "fontStyle": "bold"
@@ -162,19 +211,71 @@
             "foreground": "#FFFFFF"
           }
         },
+        {
+          "scope": [
+            "variable.parameter"
+          ],
+          "settings": {
+            "foreground": "#fffb00",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.tag.html"
+          ],
+          "settings": {
+            "foreground": "#FF118c"
+          }
+        },
+        // {
+        //   "scope": [
+        //     "source.css"
+        //   ],
+        //   "settings": {
+        //     "foreground": "#5cdeff",
+        //     "fontStyle": "italic"
+        //   }
+        // },
+        // {
+        //   "scope": [
+        //     "meta.attribute.class.html string.quoted.double.html"
+        //   ],
+        //   "settings": {
+        //     "foreground": "#ffffff",
+        //     // "fontStyle": "italic"
+        //   }
+        // },
+        {
+          "scope": [
+            "meta.element.object.svg.path.html meta.attribute.d.html string.quoted.double.html"
+          ],
+          "settings": {
+            "foreground": "#CCCCCC"
+          }
+        },
+        {
+          "scope": [
+            "meta.at-rule.keyframes.scss"
+          ],
+          "settings": {
+            "foreground": "#8AF20C"
+          }
+        }
       ]
     }
   },
-  "editor.wordWrap": "off",
+  "editor.unicodeHighlight.nonBasicASCII": true,
+  "editor.wordBasedSuggestionsMode": "allDocuments",
+  "editor.wordWrap": "on",
+  "explorer.autoReveal": "focusNoScroll",
   "explorer.compactFolders": false,
   "explorer.decorations.badges": false,
   "explorer.decorations.colors": false,
   "extensions.autoUpdate": false,
   "files.restoreUndoStack": true,
-  "frosted-glass-theme.backdropFilter": "blur(8px)",
-  "frosted-glass-theme.backgroundColor": "#00000096",
-  "helium-icon-theme.folders.color": "#0068b3",
-  "helium-icon-theme.saturation": 1,
+  "frosted-glass-theme.backdropFilter": "blur(8px) contrast(120%)",
+  "frosted-glass-theme.backgroundColor": "#222222aa",
   "highlight-matching-tag.highlightSelfClosing": true,
   "highlight-matching-tag.styles": {
     "opening": {
@@ -182,12 +283,13 @@
         "custom": {
           "color": "#000000"
         },
-        "highlight": "#ee296b"
+        "highlight": "#ffffff"
       }
     }
   },
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html-to-css-autocompletion.triggerCharacters": true,
   "html.format.wrapLineLength": 0,
-  "html.hover.references": false,
   "indentRainbow.colors": [
     "#ff008c33",
     "#00CCFF33",
@@ -197,31 +299,52 @@
     "#8AF20C33"
   ],
   "indentRainbow.indicatorStyle": "light",
-  "openInDefaultBrowser.run.openWithLocalHttpServer": false,
-  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.paths": false,
+  "less.format.spaceAroundSelectorSeparator": true,
+"openInDefaultBrowser.run.openWithLocalHttpServer": false,
+"php.validate.executablePath": "C:\\xampp\\php\\php.exe",
   "platformio-ide.disablePIOHomeStartup": true,
+  "remote.SSH.remotePlatform": {
+    "172.20.10.6": "linux"
+  },
   "scm.diffDecorations": "none",
   "scm.inputFontFamily": "editor",
+  "scm.showActionButton": false,
+  "scss.format.spaceAroundSelectorSeparator": true,
+  // "scss.scannerRootPath": "src/assets/styles",
+  "scss.scannerRootPath": "src",
   "simpleIcons.simple.file.color": "#0068b3",
   "simpleIcons.simple.folder.color": "#0068b3",
+  "statusbar_command.commands": [
+    {
+      "alignment": "left",
+      "command": "html-css-class-completion.cache",
+      "id": "sbc_cache",
+      "name": "scss-cache",
+      "priority": -1000,
+      "text": "$(symbol-event)",
+      "tooltip": "SCSS Cache"
+    }
+  ],
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "underline",
   "terminal.integrated.cursorWidth": 4,
-  "terminal.integrated.customGlyphs": false,
   "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.enableBell": true,
   "terminal.integrated.enableFileLinks": false,
   "terminal.integrated.enablePersistentSessions": false,
-  // "terminal.integrated.fontFamily": "SauceCodePro NF",
-  // "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontWeight": "500",
+  // "terminal.integrated.fontFamily": "Hack NF",
+  // "terminal.integrated.fontFamily": "SpaceMono NF",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.fontWeightBold": "500",
   "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.unicodeVersion": "11",
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.letterSpacing": 0,
-  "terminal.integrated.lineHeight": 0,
-  "terminal.integrated.minimumContrastRatio": 0,
+  "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.profiles.windows": {
     "Command Prompt": {
       "args": [],
@@ -240,9 +363,11 @@
       "path": "powershell.exe"
     }
   },
+  "terminal.integrated.rightClickBehavior": "default",
   "terminal.integrated.scrollback": 5000,
-  "terminal.integrated.shellIntegration.decorationsEnabled": false,
-  "terminal.integrated.unicodeVersion": "11",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.splitCwd": "workspaceRoot",
   "todo.embedded.exclude": [
     "*",
     "**/.*",
@@ -268,81 +393,126 @@
     "**/*.{3ds,3g2,3gp,7z,a,aac,adp,ai,aif,aiff,alz,ape,apk,ar,arj,asf,au,avi,bak,baml,bh,bin,bk,bmp,btif,bz2,bzip2,cab,caf,cgm,class,cmx,cpio,cr2,csv,cur,dat,dcm,deb,dex,djvu,dll,dmg,dng,doc,docm,docx,dot,dotm,dra,DS_Store,dsk,dts,dtshd,dvb,dwg,dxf,ecelp4800,ecelp7470,ecelp9600,egg,eol,eot,epub,exe,f4v,fbs,fh,fla,flac,fli,flv,fpx,fst,fvt,g3,gif,graffle,gz,gzip,h261,h263,h264,icns,ico,ief,img,ipa,iso,jar,jpeg,jpg,jpgv,jpm,jxr,key,ktx,lha,lib,lvp,lz,lzh,lzma,lzo,m3u,m4a,m4v,mar,mdi,mht,mid,midi,mj2,mka,mkv,mmr,mng,mobi,mov,movie,mp3,mp4,mp4a,mpeg,mpg,mpga,mxu,nef,npx,numbers,o,oga,ogg,ogv,otf,pages,pbm,pcx,pdb,pdf,pea,pgm,pic,png,pnm,pot,potm,potx,ppa,ppam,ppm,pps,ppsm,ppsx,ppt,pptm,pptx,psd,pya,pyc,pyo,pyv,qt,rar,ras,raw,resources,rgb,rip,rlc,rmf,rmvb,rtf,rz,s3m,s7z,scpt,sgi,shar,sil,sketch,slk,smv,so,sub,swf,tar,tbz,tbz2,tga,tgz,thmx,tif,tiff,tlz,ttc,ttf,txz,udf,uvh,uvi,uvm,uvp,uvs,uvu,viv,vob,war,wav,wax,wbmp,wdp,weba,webm,webp,whl,wim,wm,wma,wmv,wmx,woff,woff2,wvx,xbm,xif,xla,xlam,xls,xlsb,xlsm,xlsx,xlt,xltm,xltx,xm,xmind,xpi,xpm,xwd,xz,z,zip,zipx}"
   ],
   "todo.file.name": "TODO",
+  "typescript.suggest.paths": false,
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "manual",
   "vscode_vibrancy.imports": [
-    "$theme-style$"
+    "$theme-style$",
+    "C:\\Users\\Michael\\AppData\\Roaming\\Code\\User\\custom.css"
   ],
-  "vscode_vibrancy.opacity": 0.7,
-  "vscode_vibrancy.theme": "Default Dark",
+  "vscode_vibrancy.opacity": 0.6,
   "vscode_vibrancy.type": "acrylic",
   "window.dialogStyle": "custom",
   "window.newWindowDimensions": "maximized",
   "workbench.colorCustomizations": {
-    "activityBar.background": "#1b1b1b",
-    "breadcrumb.activeSelectionForeground": "#fff",
-    "breadcrumb.background": "#004a80",
-    "breadcrumb.foreground": "#fff",
-    "breadcrumbPicker.background": "#222c",
-    "editor.background": "#1b1b1b",
-    "editor.findMatchBackground": "#ccca",
-    "editor.findMatchHighlightBackground": "#ccca",
-    "editor.lineHighlightBackground": "#0000005b",
+    "activityBar.background": "#1B1B1B",
+    "breadcrumb.activeSelectionForeground": "#FFFFFF",
+    "breadcrumb.background": "#004A80",
+    "breadcrumb.foreground": "#FFFFFF",
+    "breadcrumbPicker.background": "#222C",
+    "editor.background": "#1B1B1B",
+    "editor.findMatchBackground": "#CCC6",
+    "editor.findMatchHighlightBackground": "#CCC3",
+    "editor.lineHighlightBackground": "#0000005B",
     "editor.lineHighlightBorder": "#00000022",
-    "editor.linkedEditingBackground": "#ff000000",
-    "editor.selectionBackground": "#ccc4",
+    "editor.linkedEditingBackground": "#FF000000",
+    "editor.selectionBackground": "#CCC4",
     "editor.selectionForeground": "#222222",
-    "editor.selectionHighlightBackground": "#4b4b4b77",
-    "editor.wordHighlightBackground": "#4b4b4b77",
-    "editor.wordHighlightStrongBackground": "#4b4b4b77",
-    "editorBracketHighlight.foreground1": "#ff3388",
+    "editor.selectionHighlightBackground": "#4B4B4B77",
+    "editor.wordHighlightBackground": "#4B4B4B77",
+    "editor.wordHighlightStrongBackground": "#4B4B4B77",
+    "editorBracketHighlight.foreground1": "#ff1381",
     "editorBracketHighlight.foreground2": "#00CCFF",
     "editorBracketHighlight.foreground3": "#8AF20C",
-    "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
-    "editorBracketMatch.border": "#8887",
-    "editorIndentGuide.activeBackground": "#fff0",
-    "input.foreground": "#fff",
-    "selection.background": "#ccccccaa",
-    "sideBar.background": "#2a2a2a",
-    "statusBar.background": "#004a80",
-    "tab.activeBackground": "#004a80",
-    "tab.hoverBackground": "#444",
-    "tab.inactiveBackground": "#333",
-    "tab.inactiveForeground": "#eee",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5608",
+    "editorBracketMatch.border": "#fff0",
+    "editorBracketMatch.background": "#fff0",
+    "editorWhitespace.foreground": "#ffffff0f",
+    "editorBracketPairGuide.activeBackground1": "#ff3366",
+    "editorBracketPairGuide.activeBackground2": "#00CCFF",
+    "editorBracketPairGuide.activeBackground3": "#8AF20C",
+    "editorIndentGuide.activeBackground": "#FFF0",
+    "editorLightBulb.foreground": "#FFFFFFaa",
+    "editorStickyScroll.background": "#22222266",
+    "input.foreground": "#FFFFFF",
+    "menu.background": "#303030",
+    "selection.background": "#CCCCCCAA",
+    "sideBar.background": "#2A2A2A",
+    "statusBar.background": "#004A80",
+    "tab.activeBackground": "#004A80",
+    "tab.hoverBackground": "#444444",
+    "tab.inactiveBackground": "#333333",
+    "tab.inactiveForeground": "#EEEEEE",
     "terminal.ansiBlack": "#020202",
     "terminal.ansiBlue": "#33D9EF",
-    "terminal.ansiBrightBlack": "#505354",
+    "terminal.ansiBrightBlack": "#CCCCCC",
     "terminal.ansiBrightBlue": "#33D9EF",
-    "terminal.ansiBrightCyan": "#a3babf",
+    "terminal.ansiBrightCyan": "#A3BABF",
     "terminal.ansiBrightGreen": "#BEED5F",
-    "terminal.ansiBrightPurple": "#9E6FFE",
-    "terminal.ansiBrightRed": "#FF669D",
+    "terminal.ansiBrightMagenta": "#9E6FFE",
+    "terminal.ansiBrightRed": "#FF357F",
     "terminal.ansiBrightWhite": "#F8F8F2",
     "terminal.ansiBrightYellow": "#E6DB74",
-    "terminal.ansiCyan": "#5e7175",
+    "terminal.ansiCyan": "#AAAAAA",
     "terminal.ansiGreen": "#A6E22E",
-    "terminal.ansiPurple": "#9E6FFE",
+    "terminal.ansiMagenta": "#FF37A5",
     "terminal.ansiRed": "#F92672",
-    "terminal.ansiWhite": "#ccccc6",
+    "terminal.ansiWhite": "#DDDDDD",
     "terminal.ansiYellow": "#FD971F",
-    "terminal.foreground": "#a0a0a0",
-    "terminalCursor.background": "#33d9ef",
-    "terminalCursor.foreground": "#33d9ef",
-    "titleBar.activeBackground": "#1b1b1b"
+    "terminal.background": "#00000000",
+    "terminal.foreground": "#EEEEEE",
+    "terminalCursor.background": "#33D9EF",
+    "terminalCursor.foreground": "#33D9EF",
+    "titleBar.activeBackground": "#1B1B1B"
   },
-  "workbench.colorTheme": "POP!",
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.md": "vscode.markdown.preview.editor"
   },
-  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.iconTheme": "pop-icon-theme",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "POP!",
+  "workbench.preferredDarkColorTheme": "POP! Theme",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "always",
-  "workbench.view.alwaysShowHeaderActions": true
+  "workbench.view.alwaysShowHeaderActions": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "color-highlight.markRuler": false,
+  "colorize.colorized_colors": [
+
+    "ARGB",
+    "HEXA",
+    "RGB",
+    "HSL"
+  ],
+  "terminal.integrated.lineHeight": 0,
+  "settingsSync.ignoredExtensions": [
+    "illixion.vscode-vibrancy-continued"
+  ],
+  "vscode_vibrancy.refreshInterval": 24,
+  "workbench.colorTheme": "POP! Theme",
+  "pop-icon-theme.saturation": 2,
+  "window.commandCenter": true,
+  "vscode_vibrancy.theme": "Default Dark",
+  "pop-icon-theme.folders.color": "#00b6ff",
+  "window.experimental.windowControlsOverlay.enabled": false,
+  "files.exclude": {
+    "**/package/*": true
+  },
+  "editor.mouseWheelScrollSensitivity": 2,
+  "workbench.list.mouseWheelScrollSensitivity": 2,
+  "editor.minimap.scale": 2,
+  "indentRainbow.lightIndicatorStyleLineWidth": 2,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.accessibilitySupport": "off",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggest.showStatusBar": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontSize": 13,
+  "cSpell.logLevel": "None",
+  "terminal.integrated.mouseWheelScrollSensitivity": 0,
 }
