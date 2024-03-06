@@ -1,0 +1,101 @@
+.explorer-folders-view .monaco-icon-label::before {
+	background-size: 22px !important;
+	padding-right: 10px !important;
+}
+
+.explorer-viewlet .editor-group, .explorer-viewlet .explorer-item {
+	line-height: 21px !important;
+}
+
+.explorer-folders-view .monaco-list-row {
+	font-size: 12px !important;
+}
+
+/* .monaco-editor .sticky-widget, */
+.monaco-editor .suggest-widget .suggest-status-bar {
+	backdrop-filter: blur(8px) brightness(0.7) !important;
+}
+
+div.title.tabs.show-file-icons div.tabs-container div.monaco-icon-label::before {
+	background-size: 20px !important;
+	padding-right: 8px !important;
+}
+
+.extensions-viewlet.narrow > .extensions .extension-list-item > .icon-container > .icon {
+	width: 42px !important;
+	height: 42px !important;
+	padding: 10px 14px 10px 0 !important;
+	flex-shrink: 0 !important;
+	object-fit: contain !important;
+}
+
+.monaco-editor .indent-active {
+	z-index: 2 !important;
+	pointer-events: none !important;
+}
+
+.monaco-editor .vertical.indent-active {
+	box-shadow: 2px 0 0 0 var(--guide-color-active) inset !important;
+}
+
+.monaco-editor .vertical {
+	box-shadow: 2px 0 0 0 var(--guide-color) inset !important;
+}
+
+.monaco-editor .horizontal-top.indent-active {
+	border-top: 2px solid var(--guide-color-active) !important;
+}
+
+.monaco-editor .horizontal-bottom.indent-active {
+	border-bottom: 2px solid var(--guide-color-active) !important;
+}
+
+.editor-group-container>.tabs .tab.active {
+	background-color: #FFFFFF33 !important;
+}
+
+.monaco-list-row:hover:not(.selected):not(.focused) {
+	background-color: #FFFFFF22 !important;
+}
+
+.token-inspect-widget {
+	backdrop-filter: var(--fgt-backdrop-filter);
+	background-color: var(--vscode-menu-background) !important;
+}
+
+div.lines-content div.view-overlays div svg {
+	left: 5px;
+}
+
+.monaco-workbench {
+	--vscode-settings-dropdownBackground: #3c3c3c66 !important;
+    --vscode-settings-dropdownForeground: #f0f0f0;
+    --vscode-settings-dropdownBorder: #3c3c3c;
+    --vscode-settings-dropdownListBorder: #454545;
+    --vscode-settings-checkboxBackground: #3c3c3c66 !important;
+    --vscode-settings-checkboxForeground: #f0f0f0;
+    --vscode-settings-checkboxBorder: #3c3c3c;
+    --vscode-settings-textInputBackground: #3c3c3c66 !important;
+    --vscode-settings-textInputForeground: #ffffff;
+    --vscode-settings-numberInputBackground: #3c3c3c66 !important;
+    --vscode-settings-numberInputForeground: #ffffff;
+}
+
+.monaco-inputbox>.ibwrapper>.input {
+	background-color: var(--vscode-settings-numberInputBackground) !important;
+}
+/* Input Box */
+/* .monaco-inputbox.idle {
+	background: #FFFFFF22 !important;
+	border: 1px solid #FFFFFF66 !important
+  }
+  
+  .monaco-inputbox.idle .wrapper {
+	background: #FFFFFF22 !important;
+	border: 1px solid #FFFFFF66 !important
+  }
+  
+  .monaco-inputbox.idle .mirror {
+	background: #FFFFFF22 !important;
+	border: 1px solid #FFFFFF66 !important
+  } */
