@@ -8,5 +8,71 @@
     "key": "ctrl+q",
     "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
     "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+t alt+m",
+    "command": "editor.action.inspectTMScopes"
+  },
+  {
+    "key": "down",
+    "command": "interactive.history.next",
+    "when": "!suggestWidgetVisible && resourceScheme == 'vscode-interactive' && interactiveInputCursorAtBoundary != 'none' && interactiveInputCursorAtBoundary != 'top'"
+  },
+  {
+    "key": "down",
+    "command": "-interactive.history.next",
+    "when": "!suggestWidgetVisible && resourceScheme == 'vscode-interactive' && interactiveInputCursorAtBoundary != 'none' && interactiveInputCursorAtBoundary != 'top'"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "insertNextSuggestion",
+    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "tab",
+    "command": "-insertNextSuggestion",
+    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "decapsulator.decapsulate",
+    "when": "editorHasSelection && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-decapsulator.decapsulate",
+    "when": "editorHasSelection && editorTextFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
   }
 ]

@@ -64,25 +64,46 @@ div.title.tabs.show-file-icons div.tabs-container div.monaco-icon-label::before 
 }
 
 div.lines-content div.view-overlays div svg {
-	left: 5px;
+	left: 1px;
 }
 
 .monaco-workbench {
 	--vscode-settings-dropdownBackground: #3c3c3c66 !important;
-    --vscode-settings-dropdownForeground: #f0f0f0;
-    --vscode-settings-dropdownBorder: #3c3c3c;
-    --vscode-settings-dropdownListBorder: #454545;
-    --vscode-settings-checkboxBackground: #3c3c3c66 !important;
-    --vscode-settings-checkboxForeground: #f0f0f0;
-    --vscode-settings-checkboxBorder: #3c3c3c;
-    --vscode-settings-textInputBackground: #3c3c3c66 !important;
-    --vscode-settings-textInputForeground: #ffffff;
-    --vscode-settings-numberInputBackground: #3c3c3c66 !important;
-    --vscode-settings-numberInputForeground: #ffffff;
+  --vscode-settings-dropdownForeground: #f0f0f0;
+  --vscode-settings-dropdownBorder: #3c3c3c;
+  --vscode-settings-dropdownListBorder: #454545;
+  --vscode-settings-checkboxBackground: #3c3c3c66 !important;
+  --vscode-settings-checkboxForeground: #f0f0f0;
+  --vscode-settings-checkboxBorder: #3c3c3c;
+  --vscode-settings-textInputBackground: #3c3c3c66 !important;
+  --vscode-settings-textInputForeground: #ffffff;
+  --vscode-settings-numberInputBackground: #3c3c3c66 !important;
+  --vscode-settings-numberInputForeground: #ffffff;
+}
+
+.monaco-select-box-dropdown-container {
+    border: 1px solid var(--vscode-settings-dropdownBorder);
+    backdrop-filter: brightness(0.5) blur(6px);
+    background-color: var(--vscode-settings-dropdownBackground);
 }
 
 .monaco-inputbox>.ibwrapper>.input {
 	background-color: var(--vscode-settings-numberInputBackground) !important;
+}
+
+.monaco-select-box-dropdown-container, .select-box-dropdown-list-container {
+    border: 1px solid var(--vscode-settings-dropdownBorder);
+    backdrop-filter: blur(3px) brightness(0.05) !important;
+    background-color: #2226 !important;
+}
+
+:root {
+	--vscode-dropdown-listBackground: #3c3c3c99 !important;
+}
+
+.monaco-hover, .monaco-hover-content {
+	height: min-content !important;
+	max-height: 450px !important;
 }
 /* Input Box */
 /* .monaco-inputbox.idle {
